@@ -12,6 +12,8 @@ const profile = {
 
 //with destructuring you have to write out the expected structure again 
 const { age }: { age: number } = profile;
+export {};
+
 
 //nested object destructuring
 const { coords: {lat, lng} }: { coords: { lat: number, lng: number}} = profile;

@@ -1,3 +1,5 @@
+export {};
+
 //functions need inputs annotating, return is inferenced (but we still annotate because not returning inside function needs an error)
 const add = (a: number, b: number): number => {
   return a + b; 
