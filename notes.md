@@ -4,12 +4,11 @@
 
 ####11 TS Example
 
-- ts-node module is for running tsc & node together using `ts-node index.js`
-
-
+- ts-node module is for quickly compiling & running a typescript file with tsc & node using `ts-node index.ts`
 
 ####12 Features
 
+- basic run through of types
 
 ####13 Maps
 
@@ -36,11 +35,10 @@ Automatically:
 //concurrently: runs multiple scripts at the same time
 - npm install nodemon concurrently
 
-
 package.json:
 ```  "scripts": {
-        "start:build": "tsc -w",
-        "start:run": "nodemon build/index.js",
-        "start": "concurrently npm:start:*"
+        "start:build": "tsc -w", //watch and compile
+        "start:run": "nodemon build/index.js", //run index.js with nodemon 
+        "start": "concurrently npm:start:*" //run all npm:start scripts concurrently
       },
 ```
