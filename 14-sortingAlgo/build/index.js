@@ -1,27 +1,19 @@
 "use strict";
-var Sorter = /** @class */ (function () {
-    // collection: number[];
-    // constructor(collection: number[]){
-    //     this.collection = collection;
-    // }     //EQUIVALENT TO//
-    function Sorter(collection) {
-        this.collection = collection;
-    }
-    Sorter.prototype.sort = function () {
-        //descrututring
-        var length = this.collection.length;
-        for (var i = 0; i < length; i++) {
-            for (var j = 0; j < length - i - 1; j++) {
-                if (this.collection[j] > this.collection[j + 1]) {
-                    var leftHandside = this.collection[j];
-                    this.collection[j] = this.collection[j + 1];
-                    this.collection[j + 1] = leftHandside;
-                }
-            }
-        }
-    };
-    return Sorter;
-}());
-var sorter = new Sorter([11, 3, -5, 0]);
-sorter.sort();
-console.log(sorter.collection);
+Object.defineProperty(exports, "__esModule", { value: true });
+var LinkedList_1 = require("./LinkedList");
+// //ARRAY
+// const numbersCollection = new NumbersCollection([10, 3 , -5, 0]);
+// numbersCollection.sort();
+// console.log(numbersCollection.data);
+// //STRING
+// const charactersCollection = new CharactersCollection('XouaheSoijhdsf');
+// charactersCollection.sort();
+// console.log(charactersCollection.data)
+//LINKEDLIST
+var linkedList = new LinkedList_1.LinkedList();
+linkedList.add(500);
+linkedList.add(-10);
+linkedList.add(30);
+linkedList.add(12);
+linkedList.sort();
+linkedList.print();

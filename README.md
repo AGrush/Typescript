@@ -43,3 +43,13 @@ package.json:
         "start": "concurrently npm:start:*" //run all npm:start scripts concurrently
       },
 ```
+
+## index.ts will use Sorter(has an interface) which uses NumberCollection/StringCollection/anyCollection class as long as it has the methods for that particular collection and how to compare,sort,getlength of that type of data.
+
+## Intefaces are useful because you can setup a contract between a parent class and other classes explaining what methods they need to easily expand the systems functionality and reuse the parent's logic.
+- Use when we have very different objects we want to work together.
+- Loose coupling (more modular & reusable)
+
+## Inheritance/Abstract Classes: 
+- Use when we are trying to build up a definition of an object.
+- Strongly couples classes together (pointless without eachother)
