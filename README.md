@@ -31,8 +31,8 @@ Manually running the JS with node :
 - node build index.js
 
 Automatically:
-//nodemon: allows us to rerun node every time there is a change, it executes js.
-//concurrently: runs multiple scripts at the same time
+- nodemon: allows us to rerun node every time there is a change, it executes js.
+- concurrently: runs multiple scripts at the same time
 - npm install nodemon concurrently
 
 package.json:
