@@ -5,6 +5,7 @@ export class NumbersCollection extends Sorter {
   // constructor(data: number[]){
   //     this.data = data;
   // }     //EQUIVALENT TO://
+  
   constructor(public data: number[]){
     super();
   }
