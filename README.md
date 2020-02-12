@@ -64,5 +64,8 @@ package.json:
 - create index.ts in src
 - change tsconfig.json outDir and rootDir to './build' and './src'
 
+#### loading files
+- loading files with node:
 https://nodejs.org/docs/latest/api/fs.html
-
+- any node
+* npm install @types/node
