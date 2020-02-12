@@ -56,7 +56,7 @@ package.json:
 
 ## 15 CSV Data statistical analisys
 
-#### Setup
+#### Project Setup
 > npm init -y
 
 > tsc --init
@@ -67,9 +67,8 @@ package.json:
 - create index.ts in src
 - change tsconfig.json outDir and rootDir to './build' and './src'
 
-#### Loading files
-- loading files with node:
-https://nodejs.org/docs/latest/api/fs.html
+#### Loading CSV files with Node fs module
+- https://nodejs.org/docs/latest/api/fs.html
 
 Use of a node library module means you have to install node types:
 > npm install @types/node
