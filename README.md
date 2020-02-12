@@ -58,8 +58,11 @@ package.json:
 
 #### setup
 > npm init -y
+
 > tsc --init
+
 > npm install nodemon concurrently
+
 - create src&build files
 - create index.ts in src
 - change tsconfig.json outDir and rootDir to './build' and './src'
