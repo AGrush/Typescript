@@ -56,7 +56,7 @@ package.json:
 
 ## 15 CSV Data statistical analisys
 
-#### setup
+#### Setup
 > npm init -y
 
 > tsc --init
@@ -67,10 +67,10 @@ package.json:
 - create index.ts in src
 - change tsconfig.json outDir and rootDir to './build' and './src'
 
-#### loading files
+#### Loading files
 - loading files with node:
 https://nodejs.org/docs/latest/api/fs.html
 
-Any node functionality means you have to install:
+Use of a node library module means you have to install node types:
 > npm install @types/node
 
