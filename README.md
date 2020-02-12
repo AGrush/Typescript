@@ -57,9 +57,9 @@ package.json:
 ## 15 CSV Data statistical analisys
 
 #### setup
-- npm init -y
-- tsc --init
-- npm install nodemon concurrently
+> npm init -y
+> tsc --init
+> npm install nodemon concurrently
 - create src&build files
 - create index.ts in src
 - change tsconfig.json outDir and rootDir to './build' and './src'
@@ -67,5 +67,7 @@ package.json:
 #### loading files
 - loading files with node:
 https://nodejs.org/docs/latest/api/fs.html
-- any node
-* npm install @types/node
+
+Any node functionality means you have to install:
+> npm install @types/node
+
