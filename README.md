@@ -73,3 +73,22 @@ package.json:
 Use of a node library module means you have to install node types:
 > npm install @types/node
 
+- - MAKE CODE REUSABLE BY TURNING CLASS INTO ABSTRACT CLASS, THEN IMPORTING & EXTENDING THE MORE GENERAL ABSTRACT CLASS & ADDING CUSTOMISED FUNCTIONALITY.
+
+- Generics: 
+```ts
+class HoldANything<T>{
+  data: T;
+
+  add(a: T): T{
+    return a;
+  }
+}
+
+const holdNumber = new HoldAything<number>();
+holdNumber.data = 123;
+holdNumber.add(10);
+
+const holdString = new HoldAnything<string>();
+holdString.data = 'asdflsdf';
+```
