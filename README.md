@@ -123,8 +123,8 @@ toggleOpen(): void
 
 <img src="https://i.postimg.cc/d1fkcZhY/1.png" width="800"/>
 
-### 
-- 
+### Composition
+- More modular
 
 <img src="https://i.postimg.cc/mZcVzQN7/2.png" width="800"/>
 
