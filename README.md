@@ -120,7 +120,8 @@ open: boolean
 toggleOpen(): void
 - - Problem is if we want a circular window we will need two new classes and duplicate some of the rectangular window code.
 
-![](https://postimg.cc/DJqyqZQj =250x)
+![](https://i.postimg.cc/DJqyqZQj/1.png =400x)
+
 
 ### 
 - 
