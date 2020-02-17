@@ -121,8 +121,7 @@ toggleOpen(): void
 - - Problem is if we want a circular window we will need two new classes and duplicate some of the rectangular window code.
 
 
-![alt text](https://i.postimg.cc/DJqyqZQj/1.png 'Logo Title Text 1')
-<img src="https://i.postimg.cc/DJqyqZQj/1.png" alt="drawing" width="200"/>
+<img src="https://i.postimg.cc/DJqyqZQj/1.png" alt="drawing" width="800"/>
 
 ### 
 - 
