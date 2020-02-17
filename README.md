@@ -96,10 +96,32 @@ holdString.data = 'asdflsdf';
 ## - Inheritance vs Composition
 -     'is a'   vs  'has a'
 
-### Ingeritance:
-class Window
+### Inheritance:
+- class Window
 open: boolean
 toggleOpen(): void
 height: number
 width: number
 area(): number
+- class Wall
+color: string
+height:number
+width: number
+area(): number
+- - To avoid code duplication we create a class that shares some of the properties:
+- class Rectangle
+height: number
+width: number
+are(): number
+- class Wall extends Rectangle
+color: string
+- class Window extends Rectangle
+open: boolean
+toggleOpen(): void
+- - Problem is if we want a circular window we will need two new classes and duplicate some of the rectangular window code.
+
+![alt text](https://i.postimg.cc/DJqyqZQj/1.png 'Logo Title Text 1')
+
+
+### 
+- 
