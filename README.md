@@ -122,6 +122,7 @@ toggleOpen(): void
 
 
 ![alt text](https://i.postimg.cc/DJqyqZQj/1.png 'Logo Title Text 1')
+<img src="https://i.postimg.cc/DJqyqZQj/1.png" alt="drawing" width="200"/>
 
 ### 
 - 
