@@ -92,3 +92,14 @@ holdNumber.add(10);
 const holdString = new HoldAnything<string>();
 holdString.data = 'asdflsdf';
 ```
+
+## - Inheritance vs Composition
+-     'is a'   vs  'has a'
+
+### Ingeritance:
+class Window
+open: boolean
+toggleOpen(): void
+height: number
+width: number
+area(): number
