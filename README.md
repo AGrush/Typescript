@@ -123,8 +123,12 @@ toggleOpen(): void
 
 <img src="https://i.postimg.cc/d1fkcZhY/1.png" width="800"/>
 
+
 ### Composition
 - More modular
+- This way there is no code repetition compared to the inheritance way.
+
+Create a class for Wall, Window and have a Dimensions: Shape reference object, which references a particular shape, such as Rectangle or Circle. The Area() method would be deleagated to each shapes class through the dimensions property. 
 
 <img src="https://i.postimg.cc/mZcVzQN7/2.png" width="800"/>
 
