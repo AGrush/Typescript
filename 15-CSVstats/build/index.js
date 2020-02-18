@@ -1,28 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var MatchResult_1 = require("./MatchResult");
-var CsvFileReader_1 = require("./CsvFileReader");
 var MatchReader_1 = require("./MatchReader");
-//INHERITANCE
-// const reader = new MatchReader('football.csv');
-// reader.read()
-//COMPOSITION
-// Create an abject that satisfies the 'DataReader interface
-var csvFileReader = new CsvFileReader_1.CsvFileReader('football.csv');
-// Create an instance of MatchReader and pass in something satisfying
-// the 'DataReader' interface
-var matchReader = new MatchReader_1.MatchReader(csvFileReader);
+var Summary_1 = require("./Summary");
+var matchReader = MatchReader_1.MatchReader.fromCsv('football.csv');
+var summary = Summary_1.Summary.winsAnalysisWithHtmlReport('Man United');
 matchReader.load();
-// matchReader.matches
-console.log(matchReader.matches[0][1]);
-var manUnitedWins = 0;
-for (var _i = 0, /*reader.data*/ _a = matchReader.matches; _i < _a.length; _i++) {
-    var match = _a[_i];
-    if (match[1] === 'Man United' && match[5] === MatchResult_1.MatchResult.HomeWin) {
-        manUnitedWins++;
-    }
-    else if (match[2] === 'Man United' && match[5] === MatchResult_1.MatchResult.AwayWin) {
-        manUnitedWins++;
-    }
-}
-console.log('manu wins ' + manUnitedWins);
+summary.buildAndPrintReport(matchReader.matches);

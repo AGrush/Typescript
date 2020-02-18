@@ -136,6 +136,12 @@ Create a class for Wall, Window and have a Dimensions: Shape reference object, w
 <img src="https://i.postimg.cc/7Pp9gfmd/3.png" width="100%"/>
 
 
-## Final structure of match report app
+## Final structure of match report app.
 
 <img src="https://i.postimg.cc/mDY1rYVY/4.png" width="100%"/>
+
+
+
+### notes
+- static methods on classes can be called off the class
+- regular methods on classes can be called off an instance of the class
