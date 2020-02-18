@@ -121,7 +121,7 @@ toggleOpen(): void |
 - - Problem is if we want a circular window we will need two new classes and duplicate some of the rectangular window code.
 
 
-<img src="https://i.postimg.cc/d1fkcZhY/1.png" width="800"/>
+<img src="https://i.postimg.cc/d1fkcZhY/1.png" width="100%"/>
 
 
 ### Composition
@@ -131,9 +131,9 @@ toggleOpen(): void |
 
 Create a class for Wall, Window and have a Dimensions: Shape reference object, which references a particular shape, such as Rectangle or Circle. The Area() method would be deleagated to each shapes class through the dimensions property and defined with an interface. Therefore all shape types will need at least an area() method. 
 
-<img src="https://i.postimg.cc/mZcVzQN7/2.png" width="800"/>
+<img src="https://i.postimg.cc/mZcVzQN7/2.png" width="100%"/>
 
-<img src="https://i.postimg.cc/7Pp9gfmd/3.png" width="800"/>
+<img src="https://i.postimg.cc/7Pp9gfmd/3.png" width="100%"/>
 
 
 ## Final structure of match report app
