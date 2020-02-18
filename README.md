@@ -97,27 +97,27 @@ holdString.data = 'asdflsdf';
 -     'is a'   vs  'has a'
 
 ### Inheritance:
-- class Window
-open: boolean
-toggleOpen(): void
-height: number
-width: number
-area(): number
-- class Wall
-color: string
-height:number
-width: number
-area(): number
+- class Window |
+open: boolean |
+toggleOpen(): void |
+height: number |
+width: number |
+area(): number |
+- class Wall |
+color: string |
+height:number |
+width: number |
+area(): number |
 - - To avoid code duplication we create a class that shares some of the properties:
-- class Rectangle
-height: number
-width: number
-are(): number
-- class Wall extends Rectangle
-color: string
-- class Window extends Rectangle
-open: boolean
-toggleOpen(): void
+- class Rectangle | 
+height: number |
+width: number |
+area(): number |
+- class Wall extends Rectangle |
+color: string |
+- class Window extends Rectangle |
+open: boolean |
+toggleOpen(): void |
 - - Problem is if we want a circular window we will need two new classes and duplicate some of the rectangular window code.
 
 
@@ -125,10 +125,11 @@ toggleOpen(): void
 
 
 ### Composition
+
 - More modular
 - This way there is no code repetition compared to the inheritance way.
 
-Create a class for Wall, Window and have a Dimensions: Shape reference object, which references a particular shape, such as Rectangle or Circle. The Area() method would be deleagated to each shapes class through the dimensions property. 
+Create a class for Wall, Window and have a Dimensions: Shape reference object, which references a particular shape, such as Rectangle or Circle. The Area() method would be deleagated to each shapes class through the dimensions property and defined with an interface. Therefore all shape types will need at least an area() method. 
 
 <img src="https://i.postimg.cc/mZcVzQN7/2.png" width="800"/>
 
