@@ -157,3 +157,4 @@ Create a class for Wall, Window and have a Dimensions: Shape reference object, w
 
 <img src="https://i.ibb.co/H2bd2jf/Screen-Shot-2020-05-11-at-8-04-38-PM.png" width="100%"/>
 
+<img src="https://i.ibb.co/wwpDLWp/2.png" width="100%"/>
