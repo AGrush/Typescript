@@ -186,3 +186,33 @@ ReactDOM.render(
 
 > npm install redux react-redux axios redux-thunk
 > npm install @types/react-redux
+
+
+
+
+## Redux flow of adding a new action ‘deleteTodo’:
+
+### ADD AN ACTION
+
+actions/types.ts
+- Add a new ‘deleteTodo’ to the enum ActionTypes
+
+actions/todos.ts
+- Create interface (DeleteTodosAction) that models a todos action structure with type: ActionTypes.deleteTodo and payload: whatever you need  
+
+actions/types.ts
+- Import the new ‘DeleteTodosAction’ interface
+- Add ‘DeleteTodosAction’ to the TodoActions union.
+
+actions/index.ts
+- add Export * from ‘./todos’
+
+Reducers/todos.ts
+- Import the unified ’TodosAction’ interface and use it 
+
+App.tsx
+- Import deleteTodo from the actions index file (as with everything)
+- Create the onTodoClick method which calls this.props.deleteTodo(id)
+- Add ‘deleteTodo’ to the connected export of App.
+- Add ‘deleteTodo’ to AppProps interface
+
