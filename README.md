@@ -158,3 +158,31 @@ Create a class for Wall, Window and have a Dimensions: Shape reference object, w
 <img src="https://i.ibb.co/H2bd2jf/Screen-Shot-2020-05-11-at-8-04-38-PM.png" width="100%"/>
 
 <img src="https://i.ibb.co/wwpDLWp/2.png" width="100%"/>
+<img src="https://i.ibb.co/7jPWPsJ/3.png" width="100%"/>
+
+
+## 18 React/Redux
+
+basic index.tsx setup no different
+```js
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+class App extends React.Component {
+  render() {
+    return <div>Hi there</div>
+  }
+}
+
+ReactDOM.render(
+  <App />,
+  document.querySelector('#root')
+)
+```
+
+- create interface for class component props
+  
+#### redux
+
+> npm install redux react-redux axios redux-thunk
+> npm install @types/react-redux
